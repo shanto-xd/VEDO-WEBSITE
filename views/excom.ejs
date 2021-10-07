@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+
+    <!-- Template main Css -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!-- Modernizr -->
+    <script src="/javascripts/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <header class="main-header">
+
+
+        <nav class="navbar navbar-static-top">
+    
+            <div class="navbar-top">
+    
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-sm-6 col-xs-12">
+    
+                            <ul class="list-unstyled list-inline header-contact">
+                                <li><i class="fa fa-phone"></i> <a href="tel:">+880-1623995145 </a></li>
+                                <li><i class="fa fa-envelope"></i> <a
+                                            href="mailto:vedo96@gmail.com">vedo96@gmail.com</a></li>
+                                <i class="fa fa-envelope"></i> <a
+                                        href="mailto:vedo96@gmail.com">vedo96@gmail.com</a>
+                            </ul> <!-- /.header-contact  -->
+    
+                        </div>
+    
+                        <div class="col-sm-6 col-xs-12 text-right">
+    
+                            <ul class="list-unstyled list-inline header-social">
+    
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-google"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa fa-pinterest-p"></i> </a></li>
+                            </ul> <!-- /.header-social  -->
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="navbar-main">
+    
+                <div class="container">
+    
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                                aria-expanded="false" aria-controls="navbar">
+    
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+    
+                        </button>
+    
+                        <a class="navbar-brand" href="/"><img src="/images/index_02.png" alt="" class="img-responsive"></a>  
+    
+                    </div>
+    
+                    <div id="navbar" class="navbar-collapse collapse pull-right">
+    
+                        <ul class="nav navbar-nav">
+    
+                            <li><a class="is-active" href="/">HOME</a></li>
+                            <li><a href="/gallery">GALLERY</a></li>
+                            <li class="has-child"><a href="/about">ABOUT</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="/history">OUR HISTORY</a></li>
+                                    <li class="submenu-item"><a href="/mission">MISSION & VISION</a></li>
+                                    <li class="submenu-item"><a href="/area">OUR WORKING AREAS</a></li>
+                                    <li class="submenu-item"><a href="/org">ORGANIZATIONAL STRUCTURE</a></li>
+                                    <li class="submenu-item"><a href="/excom">EXECUTIVE COMMITTEE</a></li>
+                                    <li class="submenu-item"><a href="/xcom">OTHER COMMITTEE</a></li>
+                                    <li class="submenu-item"><a href="/team">OUR TEAM</a></li>
+                                </ul>
+                         <!--    <li><a href="/causes">CAUSES</a></li> -->
+                            <li class="has-child"><a href="/work">OUR WORK</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="/ongoing">ON-GOING </a></li>
+                                    <li class="submenu-item"><a href="/end">ENDED </a></li>
+                                </ul>
+                        
+                            <li><a href="/contact">CONTACT</a></li>
+                            <li class="career"><a href="#" data-toggle="modal" data-target="#careerModal">GET INVOLVED</a></li>
+                            <li class="donate"><a href="#" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
+                            </li>
+    
+                        </ul>
+    
+                    </div> <!-- /#navbar -->
+    
+                </div> <!-- /.container -->
+    
+            </div> <!-- /.navbar-main -->
+    
+    
+        </nav>
+    
+    </header> <!-- /. main-header -->
+    
+
+    <style>
+        
+.our-team{
+    padding: 20px 15px 30px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic{
+    background: #ff8000;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #ff8000;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #ff8000;
+    border: 1px solid #ff8000;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #ff8000;
+    color: #fff;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+        </style>
+        
+        <div class="container">
+
+            <h2 class="title-style-1">EXECUTIVE COMMITTEE<span class="title-under"></span></h2>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                      <!--    <img src="/images/team/shanto.jpg">  -->
+                          <a href="#" data-toggle="modal" data-target="#our_team">  <img src="/images/team/asma.jpg"> </a>
+
+                        </div>
+                        <h3 class="title">ASMA BAGUM</h3>
+                        <span class="post">CHAIRMAN</span>
+
+
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/shaobybd" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+         
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <a href="#" data-toggle="modal" data-target="#our_team">  <img src="/images/team/shanto.jpg"> </a>
+                        </div>
+                        <h3 class="title">MD KAMAL UDDIN</h3>
+                        <span class="post">VICE CHAIRMAN</span>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <a href="#" data-toggle="modal" data-target="#our_team">  <img src="/images/team/shanto.jpg"> </a>
+                        </div>
+                        <h3 class="title">MD MOFIJUL ISLAM</h3>
+                        <span class="post">EXECUTIVE SECRETARY</span>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <a href="#" data-toggle="modal" data-target="#our_team">  <img src="/images/team/lekhon.jpg"> </a>
+                        </div>
+                        <h3 class="title">MOHAMMAD MAHBUBUR RAHMAN</h3>
+                        <span class="post">FINANCE SECRETARY</span>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <a href="#" data-toggle="modal" data-target="#our_team">  <img src="/images/team/shanto.jpg"> </a>
+                        </div>
+                        <h3 class="title">ROMANA AKTER MUNNI</h3>
+                        <span class="post">WOMEN's AFFAIRS SECRETARY</span>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <a href="#" data-toggle="modal" data-target="#our_team">  <img src="/images/team/shanto.jpg"> </a>
+                        </div>
+                        <h3 class="title">ABDUL AZIZ</h3>
+                        <span class="post">EDUCATIONAL SECRETARY</span>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <a href="#" data-toggle="modal" data-target="#our_team">  <img src="/images/team/shanto.jpg"> </a>
+                        </div>
+                        <h3 class="title">MOHAMMAD NURUL HOQUE</h3>
+                        <span class="post">SOCIAL WELFARE SECRETARY</span>
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+      <footer class="main-footer">
+
+        <div class="footer-top">
+    
+        </div>
+    
+    
+        <footer class="main-footer">
+
+            <div class="footer-top">
+        
+            </div>
+        
+        
+            <div class="footer-main">
+                <div class="container">
+        
+                    <div class="row">
+                        <div class="col-md-6">
+        
+                            <div class="footer-col">
+        
+                                <h4 class="footer-title">ABOUT US <span class="title-under"></span></h4>
+        
+                                <div class="footer-content">
+        
+                                    <p>
+                                        Village Economic Development Organization (VEDO) is a development platform for the poor
+                                        who have least or no access to the benefit of the welfare and development efforts initiated
+                                        by the government and other development agencies. At the backdrop of the given situation a
+                                        group of committed personalities engaged in diversified professional fields sat together in
+                                        a series of time and decided to float the Village Development Organization (VEDO). Actual
+                                        operations of the activities started propelling on 3 April in 1993 for increased access to
+                                        resources and facilities in order to bring a tangible and sustainable changes in the lives of
+                                        the poor and toiling mass of the underdeveloped rural society with particular attention to women
+                                        and children through providing support for education, health and hygiene, income generation,
+                                        capacity building in respect to training on skill development and business management.
+                                    </p>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+        
+                        <div class="col-md-6">
+        
+                            <div class="footer-col">
+        
+                                <h4 class="footer-title">Contact us <span class="title-under"></span></h4>
+        
+                                <div class="footer-content">
+        
+                                    <div class="footer-form">
+        
+                                        <div class="footer-form">
+        
+        
+        
+        
+        
+        
+                                                <form action="contact/send" method="post">
+        
+                                                    <script>
+                                                        $(document).ready(function(){
+                                                            var from,to,subject,text;
+                                                            $("#send_email").click(function(){
+                                                                to='rishanislam9@gmail.com';
+                                                                name=$("#name").val();
+                                                                email=$("#email").val();
+                                                                message=$("#messsage").val();
+                                                                $("#message2").text("Sending E-mail...Please wait");
+                                                                $.get("http://localhost:3000/send",{to:to,name:name,email:email,message:message},function(data){
+                                                                    if(data=="sent")
+                                                                    {
+                                                                        $("#message2").empty().html("Email is been sent at "+to+" . Please check inbox !");
+                                                                    }
+        
+                                                                });
+                                                            });
+                                                        });
+                                                    </script>
+        
+                                                <div class="form-group">
+                                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name"
+                                                           required>
+                                                </div>
+        
+                                                <div class="form-group">
+                                                    <input type="email" id="email" name="email" class="form-control" placeholder="E-mail"
+                                                           required>
+                                                </div>
+        
+                                                <div class="form-group">
+                                                    <textarea name="message" id="message" class="form-control" placeholder="Message"
+                                                              required></textarea>
+                                                </div>
+        
+                                                <div class="form-group alerts">
+        
+                                                    <div class="alert alert-success" role="alert">
+        
+                                                    </div>
+        
+                                                    <div class="alert alert-danger" role="alert">
+        
+                                                    </div>
+        
+                                                </div>
+        
+                                                <div class="form-group">
+                                                    <button type="submit" id="send_email" class="btn btn-submit pull-right">Send message
+                                                    </button>
+                                                </div>
+        
+                                            </form>
+        
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+                        <div class="clearfix"></div>
+        
+        
+                    </div>
+        
+        
+                </div>
+        
+        
+            </div>
+            <div class="footer-bottom">
+        
+                <div class="container text-right">
+                    VILLAGE ECONOMIC DEVELOPMENT ORGANIZATION (VEDO) @ Copyrights 2021 - by <a href="https://www.facebook.com/vedo96.official" target="_blank">VEDO IT</a>
+                </div>
+            </div>
+        
+        </footer> <!-- main-footer -->
+
+
+<!-- Autism -->
+<div class="modal fade" id="our_team" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="donateModalLabel"><b> ASMA BAGUM </b></bASMA></h4>
+            </div>
+            <div class="modal-body">
+
+                <h3 class="title-style-1 text-center"> <b> BIO  </b> <span class="title-under"></span></h3>
+                <p>
+                    A serious developmental disorder that impairs the ability to communicate and interact. Autism
+                    spectrum disorder impacts the nervous system and affects the overall cognitive, emotional, social
+                    and physical health of the affected individual.
+                </p>
+                <p>
+                    The range and severity of symptoms can vary widely. Common symptoms include difficulty with
+                    communication, difficulty with social interactions,
+                    obsessive interests and repetitive behaviours.
+                </p>
+                <p>
+                <h4> Early recognition, as well as behavioural, educational and family therapies may reduce symptoms and
+                    support development and learning. </h4>
+                </p>
+                <p>
+                    Common(More than 1 million cases per year (India)).
+                </p>
+                <p>
+                    Can't be cured, but treatment may help.
+                </p>
+                <p>
+                    <b>Chronic: </b> Can last for years or be lifelong,
+                    requires a medical diagnosis,
+                    lab tests or imaging often required.
+                </p>
+                <p>
+                <p>
+                <h4 class="title-style-1 text-center">SYMPTOMS <span class="title-under"></span></h4>
+                </p>
+                <p>
+                    <b> People may experience:</b>
+                </p>
+                <p>
+                    <b>Behavioural:</b>
+                </p>
+                <p>
+                    Inappropriate social interaction, poor eye contact,
+                    compulsive behaviour, impulsivity, repetitive movements, self-harm, or
+                    persistent repetition of words or actions.
+                </p>
+                <p>
+                    <b>Developmental:</b>
+                </p>
+                <p>
+                    Learning disability or speech delay in a child.
+                </p>
+                <p>
+                    <b>Muscular:</b>
+                </p>
+                <p>
+                    Poor coordination or tic.
+                </p>
+                <p>
+                    <b>Cognitive:</b>
+                </p>
+                <p>
+                    Intense interest in a limited number of things or problem paying
+                    attention.
+                </p>
+                <p>
+                    <b>Psychological:</b>
+                </p>
+                <p>
+                    Unaware of others' emotions or depression.
+                </p>
+                <p>
+                    <b>Speech:</b>
+                </p>
+                <p>
+                    Speech disorder or abnormal tone of voice.
+                </p>
+                <p>
+                    <b>Also common:</b>
+                </p>
+                <p>
+                    Lack of empathy, anxiety, or sensitivity to sound.
+                </p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</div> <!-- Autism -->
+
+
+
+    
+    
+    <!-- Donate Modal -->
+    <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel"
+         aria-hidden="true">
+    
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="donateModalLabel">DONATE NOW</h4>
+                </div>
+                <div class="modal-body">
+    
+                    <form class="form-donation">
+    
+                        <h3 class="title-style-1 text-center">Thank you for your donation <span class="title-under"></span>
+                        </h3>
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12 ">
+                                <input type="text" class="form-control" id="amount" placeholder="AMOUNT(₹)" required>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="firstName" placeholder="First name*" required>
+                            </div>
+    
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="lastName" placeholder="Last name*" required>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="email" placeholder="Email*" required>
+                            </div>
+    
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                            </div>
+    
+                        </div>
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" name="address" placeholder="Address" required>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12">
+                                <textarea cols="30" rows="4" class="form-control" name="note"
+                                          placeholder="Additional note"></textarea>
+                            </div>
+    
+                        </div>
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" name="donateNow">DONATE NOW
+                                </button>
+                            </div>
+    
+                        </div>
+    
+    
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div> <!-- /.modal -->
+    
+    <!-- /.career -->
+    <div class="modal fade" id="careerModal" tabindex="-1" role="dialog" aria-labelledby="careerModalLabel"
+         aria-hidden="true">
+    
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="careerModalLabel">CAREER</h4>
+                </div>
+                <div class="modal-body">
+    
+                    <form class="form-career" action="about/send" method="post">
+    
+                        <h3 class="title-style-1 text-center">Fill in all the details(all mandatory)  <span class="title-under"></span>
+                        </h3>
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12 ">
+                                <input type="text" class="form-control" id="job_des" name="job_des" placeholder="Job Description*" required>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="fname" placeholder="First name*" required>
+                            </div>
+    
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="lname" placeholder="Last name*" required>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="email" placeholder="Email*" required>
+                            </div>
+    
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                            </div>
+    
+                        </div>
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" name="address" placeholder="Address" required>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12">
+                                <textarea cols="30" rows="4" class="form-control" name="specialization"
+                                          placeholder="Specilization" required></textarea>
+                            </div>
+    
+                        </div>
+    
+                        <div class="row">
+    
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" name="submit">SUBMIT
+                                </button>
+                            </div>
+    
+                        </div>
+    
+    
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div> <!-- /.career -->
+    
+    <!--  Scripts
+    ================================================== -->
+    
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/javascripts/jquery-1.11.1.min.js"><\/script>')</script>
+    
+    <!-- Bootsrap javascript file -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+    
+    <!-- owl carouseljavascript file -->
+    <script src="/javascripts/owl.carousel.min.js"></script>
+    
+    <!-- Template main javascript -->
+    <script src="/javascripts/main.js"></script>
+    
+    
+    </body>
+    </html>
+    
